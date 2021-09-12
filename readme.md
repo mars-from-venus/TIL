@@ -1,3 +1,3 @@
 #TIL
 
-Hello world!
+es6 공부 흔적
