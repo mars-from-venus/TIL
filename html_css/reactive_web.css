@@ -1,0 +1,31 @@
+반응형 웹 : 디바이스 종류에 따라 웹페이지의 크기가 자동적으로 재조정 되는 것을 말함.
+모바일 퍼스트 :  PC보다 모바일 기기를 먼저 생각해서 디자인하고 프로그래밍 하는 기법
+
+미디어 쿼리 
+미디어 쿼리 적용법
+1) CSS파일 : 불러온 CSS파일 안 혹은 <style>태그 안에서 직접 미디어 쿼리를 작성하여 적용.
+@media screen and (min-width:512px) and (max-width:1024)
+
+미디어 타입의 종류
+ all : 모든 미디어 타입
+ aural : 음성 합성장치
+ braille : 점자 표시 장치
+ handheld : 손으로 들고 다니면서 볼 수 있는 작은 스크린에 대응하는 용도
+ print : 인쇄 용도
+ projection : 프로젝터
+ screen : 컴퓨터 스크린 (모바일과 컴퓨터 기기)
+ tty : 디스플레이 능력이 한정된 텔렉스, 터미널, 또는 수동 이동 장치등 고정 된 글자를 사용하는 미디어
+ tv : 음성과 영상이 동시 출력 되는 장치
+ embrossed : 페이지에 인쇄된 점자 표지 장치
+
+미디어 쿼리문의 속성과 속성 값
+ width : 웹페이지의 가로 길이를 판단
+ height : 웹페이지의 세로 길이를 판단
+ device-width : 단말기의 물리적인 가로길이를 판단. 즉, 기기의 실제 가로 길이를 판단
+ device-height : 단말기의 물리적인 세로길이를 판단. 즉, 기기의 실제 세로 길이를 판단
+ orientation : width와 height을 구하여 width 값이 길면 landscape로, height 값이 길면 portrait로 판단
+ aspect-ratio : width/height 비율을 판단
+ color-index : 단말기에서 사용하는 최대 색상수를 판단
+ monochrom : 흑백 컬러만을  사용하는 단말기에서 흰색과 검은색 사이의 단계를 판단
+ resolution : 지원하는 해상도를 판단. 값으로 dip이나 dpcm을 사용
+ color : 단말기에서 사용하는 최대 색상 수의 비트 수를 판단

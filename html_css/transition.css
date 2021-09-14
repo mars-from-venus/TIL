@@ -1,0 +1,40 @@
+transition : 속성을 서서히 변화시키는 속성
+- property : transition을 적용시킬 속성을 정합니다. transition-property를 참고하세요.
+- timing-function : transition의 진행 속도를 정합니다. transition-timing-function를 참고하세요.
+- duration : transition의 총 시간을 정합니다. transition-duration을 참고하세요.
+- delay : transition의 시작을 연기합니다. transition-delay를 참고하세요.
+- initial : 기본값으로 설정합니다.
+- inherit : 부모 요소의 속성값을 상속받습니다.
+
+```
+transition-property: none | all | property | initial | inherit
+```
+- none : 모든 속성에 적용하지 않습니다.
+- all : 모든 속성에 적용합니다.
+- property : 속성을 정합니다. 여러 개의 속성을 지정할 경우 쉼표로 구분합니다.
+- initial : 기본값으로 설정합니다.
+- inherit : 부모 요소의 속성값을 상속받습니다.
+
+```
+transition-timing-function: ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end | steps( n, start|end ) | cubic-bezier( n, n, n, n ) | initial | inherit;
+```
+- 기본값은 ease입니다.
+- ease : cubic-bezier( 0.25, 0.1, 0.25, 1 )과 같습니다.
+- linear : cubic-bezier( 0, 0, 1, 1 )과 같습니다.
+- ease-in : cubic-bezier( 0.42, 0, 1, 1 )과 같습니다.
+- ease-out : cubic-bezier( 0, 0, 0.58, 1 )과 같습니다.
+- ease-in-out : cubic-bezier( 0.42, 0, 0.58, 1 )과 같습니다.
+- step-start : steps( 1, start )와 같습니다.
+- step-end : steps( 1, end )와 같습니다.
+- steps( n, start|end ) : n단계로 나누어서 변화시킵니다. start 또는 end를 입력하지 않음녀 end로 처리합니다.
+- cubic-bezier( n, n, n, n ) : n에는 0부터 1까지의 수를 넣습니다.
+- initial : 기본값으로 설정합니다.
+- inherit : 부모 요소의 속성값을 상속받습니다.
+
+```
+transition-duration: time| initial | inherit
+```
+- 기본값은 0s입니다.
+- 시간 단위는 초(s) 또는 1/1000초(ms)를 사용합니다.
+- initial : 기본값으로 설정합니다.
+- inherit : 부모 요소의 속성값을 상속받습니다.

@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.left, .right{
+    width: 100%;
+    padding: 0;
+}
+.navi a{
+    float:none;
+    width:100%;
+}
