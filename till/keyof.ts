@@ -1,7 +1,7 @@
 ##Typescript에서 타입에 대한 유틸리티 클래스
 
 1. 유니온 타입 : 하나의 프로퍼티에 다양한 변수가 올 수 있는 타입
-    let args: number|string
+    let args: number | string
     위에서 변수 args는 숫자 값으로도 할당할 수 있고, 문자열로도 할당할 수 있다.
     let arg: "a"|"b"|"c"
     또한 enum값도 union타입으로 표현 할 수 있다. arg 변수는 문자열 a,b,c값만을 할당 할 수 있다.
@@ -17,8 +17,7 @@
 
 3. Partial<T> : 타입 T의 모든 프로퍼티를 Optional 형태로 바꾸어 준다.
     type Partial<T> = { [P in keyof T]?: T[P];};
-    오른쪽에서 P in keyof T는 타입 T의 프로퍼티 키값에 해당하는 P를 전부 옵셔널형태로 감싸 리턴한다.
-
+    오른쪽에서 P in keyof T는 타입 T의 프로퍼티 키값에 해당하는 P를 전부 옵셔널형태로 감싸 리턴한다
     interface User {
         name: string;
         age: number;
